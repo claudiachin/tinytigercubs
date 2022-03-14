@@ -8,15 +8,20 @@
 
 <body>
     <div id="header" class="section">
-        <img src="src/imgs/menu-icon.png" style="height:48px;" id="menu-icon" onclick=onMenuClick()>
+        <div class="left">
+            <img src="src/imgs/menu-icon.png" style="height:48px;" id="menu-icon" onclick=onMenuClick()>
+        </div>
         <div class="header-logo-text">
             <img src="src/imgs/LOGO.png" style="height:48px;">
             <h3>tiny tiger cubs</h3>
         </div>
-        <button class="primary-button header-button">
-            <img src="src/imgs/wallet-icon.png" style="height:32px;">
-            <p>Connect Wallet</p>
-        </button>
+        <div class="right">
+            <button class="primary-button header-button" style="display:flex;">
+                <img src="src/imgs/wallet-icon.png" style="height:32px;">
+                <p>Connect Wallet</p>
+            </button>
+        </div>
+
         <div id="menu" style="display:none">
             <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
                 <img src="src/imgs/opensea-icon.png" style="height:32px;">
@@ -47,6 +52,7 @@
                 <p>Partners</p>
             </button>
         </div>
+
     </div>
 
 
@@ -252,6 +258,14 @@
         <div class="footer-logo-text">
             <img src="src/imgs/LOGO.png" style="height:48px;">
             <h3>tiny tiger cubs</h3>
+        </div>
+        <div class="footer-second-line">
+            <p>Copyright of Tiny Tiger Cubs. 2022.</p>
+            <a href="https://www.google.com"><p>Policies</p></a>
+            <button class="primary-button header-button" style="display:flex;">
+                <img src="src/imgs/wallet-icon.png" style="height:32px;">
+                <p>Connect Wallet</p>
+            </button>
         </div>
     </div>
 </body>
