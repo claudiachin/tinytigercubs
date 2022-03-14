@@ -50,7 +50,7 @@ p { font-size: 18px; }
 
 #header {
     display: grid;
-    grid-template-columns: 220px 1fr 220px;
+    grid-template-columns: fit-content(220px) 1fr fit-content(220px);
     align-items: center;
     position: sticky;
     top: 0;
@@ -145,7 +145,7 @@ p { font-size: 18px; }
 }
 
 #roadmap {
-    background-image: url(src/roadmap-paws.png);
+    background-image: url(imgs/roadmap-paws.png);
     background-repeat: repeat-x;
     background-position: 0% 50%;
 }
