@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap');
+h1, h2, h3, h4 {
+    font-family: 'Cute Font', cursive;
+    margin: 0; 
+    color: #FF8009;
+}
+h1 { font-size: 144px; text-shadow: -5px 3px #000; }
+h2 { font-size: 96px; text-shadow: -4px 3px #000; }
+h3 { font-size: 64px; text-shadow: -2px 3px #000; }
+h4 { font-size: 72px; color: #000 !important; }
+
+h5, h6, p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+h5 { font-size: 28px; }
+h6 { font-size: 22px; }
+p { font-size: 18px; }
+
+.section {
+    padding: 20px 60px;
+}
+
+.primary-button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 100px;
+    background-color: #FF8009;
+    color: #000;
+}
+
+.secondary-button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.primary-button > img, .secondary-button > img {
+    padding-right: 8px;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 220px 1fr 220px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.header-button {
+    color: #fff !important;
+    justify-self: end;
+}
+
+.header-logo-text {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-text > img {
+    padding-right: 16px;
+}
+
+#menu {
+    grid-column-start: 2;
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#menu > button {
+    margin: 10px;
+    flex: 0 1 50px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#story {
+    padding-right: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(#fff, #E1CCB9);
+}
+
+#story-content {
+    padding-right: 40px;
+    flex: 1 1 200px;
+}
+
+#story-image {
+    flex: 0 1 400px;
+}
+
+#gallery {
+    background: linear-gradient(#E1CCB9, #fff);
+}
+
+#gallery-text > button {
+    margin: 20px 0;
+}
+
+#gallery-contents {
+    display: flex;
+    overflow-y: scroll;
+}
+
+.gallery-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.gallery-tile > img {
+    width: 200px;
+}
+
+.text-frame {
+    background: #EBEBEB;
+    box-shadow: 0px 5px #5B5B5B;
+    text-align: center;
+    width: 150px;
+    margin: 20px 0;
+}
+
+.text-frame > h4 {
+    font-size: 36px !important;
+}
+
+#roadmap {
+    background-image: url(src/roadmap-paws.png);
+    background-repeat: repeat-x;
+    background-position: 0% 50%;
+}
+
+#team {
+    background: linear-gradient(#fff, #E1CCB9);
+}
+
+#gallery-text, #roadmap-text, #team-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 0 40px 0;
+}
+
+#gallery-text > h2, #roadmap-text > h2, #team-text > h2 {
+    padding-right: 40px;
+}
+
+#gallery-text > p, #roadmap-text > p, #team-text > p {
+    max-width: 900px;
+    padding-right: 40px;
+}
+
+#roadmap-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#team-members {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.roadmap-content {
+    flex: 0 1 300px;
+    margin: 0 40px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member > img {
+    width: 300px;
+    padding-bottom: 16px;
+}
+
+.socials > a > img {
+    height: 32px;
+    padding: 10px;
+}
+
+#faq {
+    background: #E1CCB9;
+}
+
+#footer {
+    background: #000;
+}
+
+.footer-logo-text {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.footer-logo-text > img {
+    padding-right: 16px;
+}

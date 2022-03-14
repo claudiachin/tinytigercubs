@@ -1,15 +1,258 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
+
 <body>
-    <div>
-        <h1>Tiny Tiger Cubs</h1>
-        <h2>Tiny Tiger Cubs</h2>
-        <h3>Tiny Tiger Cubs</h3>
-        <h4>Tiny Tiger Cubs</h4>
-        <h5>Tiny Tiger Cubs</h5>
-        <h6>Tiny Tiger Cubs</h6>
+    <div id="header" class="section">
+        <img src="src/menu-icon.png" style="height:48px;" id="menu-icon" onclick=onMenuClick()>
+        <div class="header-logo-text">
+            <img src="src/LOGO.png" style="height:48px;">
+            <h3>tiny tiger cubs</h3>
+        </div>
+        <button class="primary-button header-button">
+            <img src="src/wallet-icon.png" style="height:32px;">
+            <p>Connect Wallet</p>
+        </button>
+        <div id="menu" style="display:none">
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/opensea-icon.png" style="height:32px;">
+                <p>OpenSea</p>
+            </button>
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/instagram-icon.png" style="height:32px;">
+                <p>Instagram</p>
+            </button>
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/discord-icon.png" style="height:32px;">
+                <p>Discord</p>
+            </button>
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/whitepaper-icon.png" style="height:32px;">
+                <p>Whitepaper</p>
+            </button>
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/policies-icon.png" style="height:32px;">
+                <p>Policies</p>
+            </button>
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/mission-icon.png" style="height:32px;">
+                <p>Mission</p>
+            </button>
+            <button class="secondary-button" onclick="window.location.href='https://www.google.com'">
+                <img src="src/partners-icon.png" style="height:32px;">
+                <p>Partners</p>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="hero" class="section">
+        <img src="src/LOGO.png" style="height:96px;">
+        <h1>tiny tiger cubs</h1>
+        <p>Saving tigers one NFT at a time</p>
+    </div>
+    <div id="story" class="section">
+        <div id="story-content">
+            <h2>Story</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+            </p>
+            <h4>#SaveTheTigers</h4>
+        </div>
+        <div id="story-image">
+            <img src="src/trees.png">
+        </div>
+    </div>
+
+
+    <div id="gallery" class="section">
+        <div id="gallery-text">
+            <h2>Gallery</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <button class="primary-button"><p>See more</p></button>
+        </div>
+        <div id="gallery-contents">
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+            <div class="gallery-tile">
+                <img src="src/Framed Tiger.png">
+                <div class="text-frame">
+                    <h4>???</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="roadmap" class="section">
+        <div id="roadmap-text">
+            <h2>Roadmap</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div id="roadmap-contents">
+            <div class="roadmap-content">
+                <h5>Lorem Ipsum</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="roadmap-content">
+                <h5>Lorem Ipsum</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="roadmap-content">
+                <h5>Lorem Ipsum</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="team" class="section">
+        <div id="team-text">
+            <h2>Team</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div id="team-members">
+            <div class="team-member">
+                <img src="src/Framed Tiger.png">
+                <h5>Lorem ipsum</h5>
+                <h6>Lorem ipsum dolor</h6>
+                <div class="socials">
+                    <a href="https://www.google.com"><img src="src/twitter.png"></a>
+                    <a href="https://www.google.com"><img src="src/discord.png"></a>
+                    <a href="https://www.google.com"><img src="src/instagram.png"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="src/Framed Tiger.png">
+                <h5>Lorem ipsum</h5>
+                <h6>Lorem ipsum dolor</h6>
+                <div class="socials">
+                    <a href="https://www.google.com"><img src="src/twitter.png"></a>
+                    <a href="https://www.google.com"><img src="src/discord.png"></a>
+                    <a href="https://www.google.com"><img src="src/instagram.png"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="src/Framed Tiger.png">
+                <h5>Lorem ipsum</h5>
+                <h6>Lorem ipsum dolor</h6>
+                <div class="socials">
+                    <a href="https://www.google.com"><img src="src/twitter.png"></a>
+                    <a href="https://www.google.com"><img src="src/discord.png"></a>
+                    <a href="https://www.google.com"><img src="src/instagram.png"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="src/Framed Tiger.png">
+                <h5>Lorem ipsum</h5>
+                <h6>Lorem ipsum dolor</h6>
+                <div class="socials">
+                    <a href="https://www.google.com"><img src="src/twitter.png"></a>
+                    <a href="https://www.google.com"><img src="src/discord.png"></a>
+                    <a href="https://www.google.com"><img src="src/instagram.png"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="src/Framed Tiger.png">
+                <h5>Lorem ipsum</h5>
+                <h6>Lorem ipsum dolor</h6>
+                <div class="socials">
+                    <a href="https://www.google.com"><img src="src/twitter.png"></a>
+                    <a href="https://www.google.com"><img src="src/discord.png"></a>
+                    <a href="https://www.google.com"><img src="src/instagram.png"></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="src/Framed Tiger.png">
+                <h5>Lorem ipsum</h5>
+                <h6>Lorem ipsum dolor</h6>
+                <div class="socials">
+                    <a href="https://www.google.com"><img src="src/twitter.png"></a>
+                    <a href="https://www.google.com"><img src="src/discord.png"></a>
+                    <a href="https://www.google.com"><img src="src/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="faq" class="section">
+        <h2>FAQ</h2>
         <p>Tiny Tiger Cubs</p>
+    </div>
+
+
+    <div id="footer" class="section">
+        <div class="footer-logo-text">
+            <img src="src/LOGO.png" style="height:48px;">
+            <h3>Tiny Tiger Cubs</h3>
+        </div>
     </div>
 </body>
