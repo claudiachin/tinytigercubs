@@ -50,7 +50,7 @@ p { font-size: 18px; }
 
 #header {
     display: grid;
-    grid-template-columns: fit-content(220px) 1fr fit-content(220px);
+    grid-template-columns: 220px 1fr 220px;
     align-items: center;
     position: sticky;
     top: 0;
@@ -92,20 +92,19 @@ p { font-size: 18px; }
 }
 
 #story {
-    padding-right: 0 !important;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(#fff, #E1CCB9);
 }
 
 #story-content {
-    padding-right: 40px;
     flex: 1 1 200px;
 }
 
 #story-image {
-    flex: 0 1 400px;
+    flex: 0 1 200px;
 }
 
 #gallery {
@@ -147,27 +146,7 @@ p { font-size: 18px; }
 #roadmap {
     background-image: url(imgs/roadmap-paws.png);
     background-repeat: repeat-x;
-    background-position: 0% 50%;
-}
-
-#team {
-    background: linear-gradient(#fff, #E1CCB9);
-}
-
-#gallery-text, #roadmap-text, #team-text {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 0 40px 0;
-}
-
-#gallery-text > h2, #roadmap-text > h2, #team-text > h2 {
-    padding-right: 40px;
-}
-
-#gallery-text > p, #roadmap-text > p, #team-text > p {
-    max-width: 900px;
-    padding-right: 40px;
+    background-position: 0% 100%;
 }
 
 #roadmap-contents {
@@ -176,15 +155,19 @@ p { font-size: 18px; }
     justify-content: center;
 }
 
+.roadmap-content {
+    flex: 1 1 350px;
+    margin: 20px 40px;
+}
+
+#team {
+    background: linear-gradient(#fff, #E1CCB9);
+}
+
 #team-members {
     display: grid;
     grid-gap: 60px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.roadmap-content {
-    flex: 0 1 300px;
-    margin: 0 40px;
 }
 
 .team-member {
@@ -202,6 +185,22 @@ p { font-size: 18px; }
 .socials > a > img {
     height: 32px;
     padding: 10px;
+}
+
+#gallery-text, #roadmap-text, #team-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 0 40px 0;
+}
+
+#gallery-text > h2, #roadmap-text > h2, #team-text > h2 {
+    padding-right: 40px;
+}
+
+#gallery-text > p, #roadmap-text > p, #team-text > p {
+    max-width: 900px;
+    padding-right: 40px;
 }
 
 #faq {
