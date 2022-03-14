@@ -48,12 +48,15 @@ p { font-size: 18px; }
     padding-right: 8px;
 }
 
+.true-header {
+    position: sticky;
+    top: 0;
+}
+
 #header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    position: sticky;
-    top: 0;
     background: #fff;
 }
 
@@ -77,13 +80,13 @@ p { font-size: 18px; }
 }
 
 #menu {
-    grid-column-start: 2;
-    max-width: 750px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: #ffffffdd;
 }
+
 #menu > button {
     margin: 10px;
     flex: 0 1 50px;
@@ -218,6 +221,7 @@ p { font-size: 18px; }
     justify-content: center;
     flex-wrap: wrap;
     background: #000;
+    padding: 40px 60px !important;
 }
 
 .footer-second-line {
@@ -226,7 +230,7 @@ p { font-size: 18px; }
 }
 
 .footer-second-line > * {
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .footer-second-line > p {
