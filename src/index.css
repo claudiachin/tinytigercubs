@@ -136,6 +136,21 @@ a {
     overflow-y: scroll;
 }
 
+#gallery-contents::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #EBEBEB;
+}
+
+#gallery-contents::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+}
+
+#gallery-contents::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E1CCB9;
+}
+
 .gallery-tile {
     display: flex;
     flex-direction: column;
@@ -236,10 +251,6 @@ a {
 
 .faq-ans {
     padding: 16px 32px;
-}
-
-.plus-minus {
-    font-weight: 500 !important;
 }
 
 .faq-card:nth-child(even) > .faq-qn {

@@ -12,7 +12,7 @@ function onMenuClick() {
 
 function toggleAns(toggle) {
     if (toggle.innerHTML == '+') { // to open
-        toggle.innerHTML = '-';
+        toggle.innerHTML = '--';
         toggle.parentElement.style.borderRadius = '30px 30px 0 0'
         toggle.parentElement.nextElementSibling.style.display = 'block';
     } else {
